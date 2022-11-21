@@ -2,23 +2,23 @@
 // Created by Administrator on 11/21/2022.
 //
 
-#include "MyException.h"
+#include "my_exception.h"
 #include "cstring"
 
-namespace Qing {
+namespace qing {
     namespace cus_exception {
-        const char *MyException::what() const noexcept {
+        const char *my_exception::what() const noexcept {
             return "this is my cus_exception~";
         }
 
         //构造函数，生成异常信息
-        MyException::MyException(char *message) {
+        my_exception::my_exception(char *message) {
             this->message = message;
         }
 
-        MyException::~MyException() noexcept {
+        my_exception::~my_exception() noexcept {
 
         }
 
-    } // Qing
+    } // qing
 } // cus_exception

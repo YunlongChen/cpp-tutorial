@@ -12,7 +12,7 @@
 using namespace std;
 
 template<class T>
-class Stack {
+class stack {
 private:
     vector<T> elems;     // 元素
 

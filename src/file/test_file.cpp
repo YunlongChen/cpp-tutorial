@@ -9,7 +9,7 @@
 #define MASK_DEFINE(x) #x
 #define concat(a, b) a##b
 
-using namespace Qing::cus_exception;
+using namespace qing::cus_exception;
 
 /**
  *测试文件读取
@@ -36,9 +36,9 @@ test_file_str::test_file_str() {
         cout << "构造函数" << endl;
         file.open("file.data", ios::out);
         cout << "#define定义的函数：MIN(a, b)=" << MIN(1, 2) << endl;
-        throw MyException((char *) "err message");
+        throw my_exception((char *) "err message");
     }
-    catch (MyException &exception) {
+    catch (my_exception &exception) {
         std::cout << exception.what() << endl;
     }
 }

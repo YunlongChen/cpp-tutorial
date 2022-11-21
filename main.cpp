@@ -4,7 +4,7 @@
 #include "src/test.h"
 #include "ctime"
 #include "cstring"
-#include "src/template/Stack.h"
+#include "src/template/stack.h"
 #include "src/file/test_file.h"
 
 typedef Test::TestClass TestName;
@@ -22,7 +22,7 @@ typedef struct Username {
 
 using namespace std;
 
-namespace Qing {
+namespace qing {
 
     template<typename T>
     inline T const &Max(T const &a, T const &b) {
@@ -37,7 +37,7 @@ void testMethod() {
     cout << "当前时间 __TIME__ : " << __TIME__ << endl;
 
     // string 类型的栈
-    Stack<string> stringStack;
+    stack<string> stringStack;
     cout << sizeof(stringStack) << endl;
 }
 
@@ -105,19 +105,19 @@ int main() {
     cout << ltm->tm_sec << endl;
 
 
-    cout << Qing::Max(2, 3) << endl;
+    cout << qing::Max(2, 3) << endl;
 
     int i = 39;
     int j = 20;
-    cout << "Max(i, j): " << Qing::Max(i, j) << endl;
+    cout << "Max(i, j): " << qing::Max(i, j) << endl;
 
     double f1 = 13.5;
     double f2 = 20.7;
-    cout << "Max(f1, f2): " << Qing::Max(f1, f2) << endl;
+    cout << "Max(f1, f2): " << qing::Max(f1, f2) << endl;
 
     string s1 = "Hello";
     string s2 = "World";
-    cout << "Max(s1, s2): " << Qing::Max(s1, s2) << endl;
+    cout << "Max(s1, s2): " << qing::Max(s1, s2) << endl;
 
     cout << miles << "test_output" << endl;
 

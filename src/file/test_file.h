@@ -3,7 +3,7 @@
 //
 
 #include "fstream"
-#include "../common/exception/MyException.h"
+#include "../common/exception/my_exception.h"
 
 #ifndef TEST_APP_TEST_FILE_H
 #define TEST_APP_TEST_FILE_H
