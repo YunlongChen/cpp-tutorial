@@ -1,5 +1,6 @@
 #include <iostream>
 #include <unistd.h>
+#include <csignal>
 #include "src/test.h"
 #include "ctime"
 #include "cstring"
@@ -67,7 +68,7 @@ int main() {
 #if WIN64
     cout << "不需要终止" << endl;
 #else
-    raise(SIGINT);
+//    raise(SIGINT);
 #endif
 
     auto ff = 3.1459;
