@@ -34,7 +34,7 @@ test_file_str::~test_file_str() {
 test_file_str::test_file_str() {
     try {
         cout << "构造函数" << endl;
-        file.open("file.data", ios::out);
+        file.open("Testing/file.data", ios::out);
         cout << "#define定义的函数：MIN(a, b)=" << MIN(1, 2) << endl;
         throw my_exception((char *) "err message");
     }
